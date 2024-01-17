@@ -48,18 +48,19 @@
         <td>
             @if (vehicle.IsEngineOn())
             {
-                <a class="" href="/Home/StopEngine?id=@vehicle.ID">Stop Engine</a> }
+                <a class="stop_engine" href="/Home/StopEngine?id=@vehicle.ID">Stop Engine</a> 
+            }
             else
             {
-                <a class="" href="/Home/StartEngine?id=@vehicle.ID">Start Engine</a>
+                <a class="start_engine" href="/Home/StartEngine?id=@vehicle.ID">Start Engine</a>
             }
-             <a class="" href="/Home/AddGas?id=@vehicle.ID">Fill Gas</a>
+             <a class="fill_gas" href="/Home/AddGas?id=@vehicle.ID">Fill Gas</a>
         </td>
     </tr>
         }
     </table>
 
-    <a href="/Home/AddMustang">Add Mustang</a>
-    <a href="/Home/AddExplorer">Add Explorer</a>
-    <a href="/Home/AddEscape">Add Escape</a>
+    <a class="" href="/Home/AddMustang">Add Mustang</a>
+    <a class="" href="/Home/AddExplorer">Add Explorer</a>
+    <a class="" href="/Home/AddEscape">Add Escape</a>
 </div>
