@@ -48,13 +48,13 @@
         <td>
             @if (vehicle.IsEngineOn())
             {
-                <a class="stop_engine" href="/Home/StopEngine?id=@vehicle.ID">Stop Engine</a> 
+                <a href="/Home/StopEngine?id=@vehicle.ID">Stop Engine</a> 
             }
             else
             {
-                <a class="start_engine" href="/Home/StartEngine?id=@vehicle.ID">Start Engine</a>
+                <a href="/Home/StartEngine?id=@vehicle.ID">Start Engine</a>
             }
-             <a class="fill_gas" href="/Home/AddGas?id=@vehicle.ID">Fill Gas</a>
+             <a href="/Home/AddGas?id=@vehicle.ID">Fill Gas</a>
         </td>
     </tr>
         }
